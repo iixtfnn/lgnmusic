@@ -20,11 +20,6 @@ module.exports = {
       .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [GlaceYT](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
       .addFields(
       
-        {
-          name: '▶️  Basic',
-          value: '`avatar`, `owner`, `support`, `invite`, `userinfo`',
-          inline: true,
-        },
        
         {
           name: '▶️  Music',
@@ -32,29 +27,6 @@ module.exports = {
           inline: true,
         },
       
-        {
-          name: '▶️  Fun',
-          value: ' `ascii`, `joke`, `roll`',
-          inline: true,
-        },
-      
-        {
-          name: '▶️  Image',
-          value: '`cat`, `dog`',
-          inline: true,
-        },
-      
-        {
-          name: '▶️  Anime',
-          value: '`<prefix>animecommands for more info`',
-          inline: true,
-        },
-     
-        {
-          name: '▶️  Utility',
-          value: '`kick`, `ban`, `serverinfo`,`userinfo`, `clear`',
-          inline: true,
-        }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
       .setImage(`https://cdn.discordapp.com/attachments/1113800537402527903/1236803979996958740/11.png?ex=6641e8b7&is=66409737&hm=96f69ba8bcde4ca44bf8713e22001e0bafad0335cfd1f57c439a34b4762f0e03&`);
