@@ -17,12 +17,36 @@ module.exports = {
         url: 'https://discord.gg/FUEHs7RCqz'
     })
      
-      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [Legends Community (LGN)](https://www.youtube.com/@Legends_313_Clan)**\n\n__**COMMANDS :**__ `)
+      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [GlaceYT](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
       .addFields(
       
         {
+          name: '▶️  Basic',
+          value: '`avatar`, `owner`, `support`, `invite`, `userinfo`',
+          inline: true,
+        },
+       
+        {
           name: '▶️  Music',
           value: '`play`, `stop`, `seek`,`volume`,`pause`,`resume`,`skip`,`remove`,`shuffle`,`queue`',
+          inline: true,
+        },
+      
+        {
+          name: '▶️  Fun',
+          value: ' `ascii`, `joke`, `roll`',
+          inline: true,
+        },
+      
+        {
+          name: '▶️  Image',
+          value: '`cat`, `dog`',
+          inline: true,
+        },
+      
+        {
+          name: '▶️  Anime',
+          value: '`<prefix>animecommands for more info`',
           inline: true,
         },
      
@@ -37,14 +61,19 @@ module.exports = {
 
     const button1 = new ButtonBuilder()
       .setLabel('YouTube')
-      .setURL('https://www.youtube.com/@Legends_313_Clan')
+      .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
       .setStyle(ButtonStyle.Link);
 
     const button2 = new ButtonBuilder()
       .setLabel('Discord')
-      .setURL('https://discord.gg/wdCZgK3Pmp')
+      .setURL('https://discord.gg/xQF9f9yUEM')
       .setStyle(ButtonStyle.Link);
 
+    const button3 = new ButtonBuilder()
+      .setLabel('Code')
+      .setURL('https://github.com/GlaceYT')
+      .setStyle(ButtonStyle.Link);
+      
     const row = new ActionRowBuilder()
       .addComponents(button1, button2, button3);
     
